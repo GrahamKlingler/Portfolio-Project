@@ -1,5 +1,6 @@
+/* Background and loading animation */
 .App {
-  text-align: center;
+  animation: fade-load 0.9s ease-in;
   background-image: url("./img/main-background.jpg");
   position: fixed;
   min-width: 100%;
@@ -8,37 +9,88 @@
   background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.resume {
+  box-sizing: border-box;
+  /* border-radius: 25px; */
+  /* border: 3px black solid; */
+  position: absolute;
+  bottom: 0%;
+  left: 25%;
+  margin-left: -25%;
+  margin-top: 12%;
+  overflow: hidden;
+  background-color: rgba(255, 144, 40, 0.8);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  align-items: center;
+  font-family: "Roboto Slab";
+  font-size: xx-large;
+  color: black;
+  text-align: center;
+  /* max-width: 50%; */
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  box-sizing: border-box;
+  font-family: "Roboto Slab";
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  letter-spacing: .1rem;
+  padding: 2% 5%; 
 }
 
-@keyframes App-logo-spin {
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fcf5e8;
+  /* -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black; */
+}
+
+.navbar a:hover {
+  animation: fade-text-active .2s ease-in;
+  color: #f7dfb2;
+}
+
+@keyframes fade-load {
+  /* 0% {
+    opacity: 0;
+  } */
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 100;
   }
 }
+
+/* Will work on later */
+@keyframes fade-text-inactive {
+  from {
+    color: #f7dfb2;
+  }
+  to {
+    color: #fcf5e8;
+  }
+}
+
+/* Fade text darker on hover */
+@keyframes fade-text-active {
+  from {
+    color: #fcf5e8;
+  }
+  to {
+    color: #f7dfb2;
+  }
+} 
