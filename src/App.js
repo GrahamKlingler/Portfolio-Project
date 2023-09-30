@@ -1,29 +1,22 @@
 import './App.css';
-// import Navbar from "./Navbar.js";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cars from "./Cars.js";
 import Street from "./Street.js";
 import Bio from "./Bio.js";
 
 function App() {
-  let component
-  switch (window.location.pathname) {
-    case "/Portfolio-Project/bio":
-      component = <Bio />
-      break
-    case "/Portfolio-Project/cars":
-      component = <Cars />
-      break
-    case "/Portfolio-Project/street":
-      component = <Street />
-      break
-    default:
-      component = <Bio />
-      break
-  }
+  let reponame = "Portfolio-Project";
   return (
-    <div className='App'>
-      { component }
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Routes>
+          <Route path={`/${reponame}/bio`} element={<Bio />}/>
+          <Route path={`/${reponame}/`} element={<Bio />}/>
+          <Route path={`/${reponame}/cars`} element={<Cars />}/>
+          <Route path={`/${reponame}/street`} element={<Street />}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
