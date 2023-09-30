@@ -8,14 +8,14 @@
   animation: fade-load 1s ease-in .5s backwards;
 }
 
-.bio {
+/* .bio {
   background-image: url("./img/main-background.jpg");
   position: fixed;
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
   background-position: center;
-}
+} */
 
 .street {
   background-color: #424242;
@@ -57,13 +57,10 @@
 
 .resume {
   box-sizing: border-box;
-  /* border-radius: 25px; */
-  /* border: 3px black solid; */
   position: absolute;
-  bottom: 0%;
-  left: 25%;
-  margin-left: -25%;
-  margin-top: 12%;
+  top: 50%;
+  padding: 5px 15px;
+  margin-top: 12%; 
   overflow: hidden;
   background-color: rgba(255, 144, 40, 0.8);
   justify-content: center;
@@ -75,7 +72,6 @@
   font-size: xx-large;
   color: black;
   text-align: center;
-  /* max-width: 50%; */
 }
 
 .navbar {
