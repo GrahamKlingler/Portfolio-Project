@@ -6,7 +6,7 @@ function Gallery(props) {
             {props.images.map((img, index) => {
                 return (
                     <div className='pics' key={index}>
-                        <img key={index} src={img} style={{width: "100%"}} alt={`${props.pathname}-${index}`}/>
+                        <img key={index} src={img} loading="lazy" style={{width: "100%"}} alt={`${props.pathname}-${index}`}/>
                     </div>
                 )
             })}

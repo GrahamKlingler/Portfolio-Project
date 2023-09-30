@@ -5,7 +5,7 @@
 
 /* Background and loading animation */
 .App {
-  animation: fade-load 0.9s ease-in;
+  animation: fade-load 1s ease-in .5s backwards;
 }
 
 .bio {
