@@ -7,13 +7,13 @@ import Bio from "./Bio.js";
 function App() {
   let component
   switch (window.location.pathname) {
-    case "/bio":
+    case "/Portfolio-Project/bio":
       component = <Bio />
       break
-    case "/cars":
+    case "/Portfolio-Project/cars":
       component = <Cars />
       break
-    case "/street":
+    case "/Portfolio-Project/street":
       component = <Street />
       break
     default:
@@ -22,7 +22,6 @@ function App() {
   }
   return (
     <div className='App'>
-      
       { component }
     </div>
   );
