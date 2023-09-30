@@ -1,12 +1,58 @@
+:root {
+  --main-text: #fcf5e8;
+  --hover-text: #f7dfb2;
+}
+
 /* Background and loading animation */
 .App {
   animation: fade-load 0.9s ease-in;
+}
+
+.bio {
   background-image: url("./img/main-background.jpg");
   position: fixed;
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
   background-position: center;
+}
+
+.street {
+  background-color: #424242;
+}
+
+.cars {
+  background-color: #424242;
+}
+
+.gallery {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  -moz-column-width: 33%;
+  -webkit-column-width: 33%;
+  column-width: 33%;
+  padding: 0 20px;
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  margin-bottom: 12px;
+}
+
+.gallery .pics:hover {
+  filter: opacity(0.8);
+}
+
+.gallery-name {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 50px;
+  letter-spacing: .3rem;
+  color: var(--main-text);
+  stroke-width: 3px;
+  -webkit-text-stroke-color: black;
 }
 
 .resume {
@@ -53,14 +99,14 @@
 
 a {
   text-decoration: none;
-  color: #fcf5e8;
+  color: var(--main-text);
   /* -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black; */
 }
 
 .navbar a:hover {
   animation: fade-text-active .2s ease-in;
-  color: #f7dfb2;
+  color: var(--hover-text);
 }
 
 @keyframes fade-load {
@@ -88,9 +134,28 @@ a {
 /* Fade text darker on hover */
 @keyframes fade-text-active {
   from {
-    color: #fcf5e8;
+    color: var(--main-text);
   }
   to {
-    color: #f7dfb2;
+    color: var(--hover-text);
   }
 } 
+
+@media (max-width: 991px) {
+  .gallery {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+  -moz-column-width: 100%;
+  -webkit-column-width: 100%;
+  column-width: 100%;
+  }
+}

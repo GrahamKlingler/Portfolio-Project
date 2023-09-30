@@ -1,8 +1,10 @@
 import profile_pic from "./img/profile-picture.jpg";
+import Navbar from "./Navbar";
 
 function Bio() {
     return (
-        <div className="Bio">
+        <div className="bio">
+            <Navbar />
             <div className="resume">
                 <li>
                     <img style={{marginLeft: 25, width: 100, height: 100, objectFit: "cover", borderRadius: 60}} src={profile_pic} alt="Profile"></img>

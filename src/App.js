@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from "./Navbar.js";
+// import Navbar from "./Navbar.js";
 import Cars from "./Cars.js";
 import Street from "./Street.js";
 import Bio from "./Bio.js";
@@ -22,7 +22,7 @@ function App() {
   }
   return (
     <div className='App'>
-      <Navbar />
+      
       { component }
     </div>
   );
