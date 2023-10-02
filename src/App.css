@@ -3,12 +3,29 @@
   --hover-text: #f7dfb2;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Chivo);
+
+@font-face {
+  font-family: 'Comfortaa-Light';
+  src: local('Comfortaa-Light'), url(./Comfortaa-Light.ttf) format('truetype');
+}
+
 /* Background and loading animation */
 .App {
   animation: fade-load 1s ease-in .5s backwards;
 }
 
-/* .bio {
+.bio {
+  background-image: url("./img/bio-background.jpg");
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  position: fixed;
+}
+
+/* .home {
   background-image: url("./img/main-background.jpg");
   position: fixed;
   min-width: 100%;
@@ -17,11 +34,7 @@
   background-position: center;
 } */
 
-.street {
-  background-color: #424242;
-}
-
-.cars {
+.gallery-pg {
   background-color: #424242;
 }
 
@@ -55,14 +68,49 @@
   -webkit-text-stroke-color: black;
 }
 
-.resume {
+.portfolio-text {
+  flex-direction: column;
+  position: absolute;
+  padding-top: 15vh;
+  padding-left: 15vw;
+  display: flex; 
+  /* text-align: center;  */
+  list-style: none;
+  letter-spacing: .1rem;
+}
+
+.portfolio-title {
+  font-family: "Comfortaa-Light";
+  padding-bottom: 0vh;
+  font-size: 80px;
+  color: white;
+}
+
+.portfolio-link {
+  /* padding-top: 0vh; */
+  padding-left: 10px;
+  transform: translateY(-100px);
+  text-decoration: underline;
+  font-family: "Chivo"; 
+  color: orange;
+}
+.about-name {
+  padding-left: 0px;
+}
+
+.portfolio-link:hover {
+  animation: fade-view-portfolio .2s ease-in;
+  color: #ffd380;
+}
+
+.about {
   box-sizing: border-box;
   position: absolute;
   top: 50%;
   padding: 5px 15px;
   margin-top: 12%; 
   overflow: hidden;
-  background-color: rgba(255, 144, 40, 0.8);
+  /* background-color: rgba(40, 205, 255, 0.293); */
   justify-content: center;
   display: flex;
   list-style: none;
@@ -81,10 +129,10 @@
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   gap: 2rem;
   letter-spacing: .1rem;
-  padding: 2% 5%; 
+  padding: 3% 5%; 
 }
 
 .navbar ul {
@@ -104,6 +152,53 @@ a {
   animation: fade-text-active .2s ease-in;
   color: var(--hover-text);
 }
+
+.navhome {
+  transform: translateY(23px);
+}
+
+.droplink {
+  text-decoration: none;
+  color: var(--main-text);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
+}
+
+.droplink:hover {
+  animation: fade-text-active 0.2s ease-in;
+  color: var(--hover-text);
+}
+
+.droplink:hover > .dropdown-menu {
+  opacity: 1;
+}
+
+.dropdown-menu {
+  position: relative;
+  padding: .4rem; 
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  font-family: "Chivo";
+  text-align: left;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown > .droplink:hover + .dropdown-menu{
+  transform: translateY(10px);
+  pointer-events: auto;
+  opacity: 1;
+} 
+
+
 
 @keyframes fade-load {
   /* 0% {
@@ -137,11 +232,26 @@ a {
   }
 } 
 
+@keyframes fade-view-portfolio {
+  from {
+    color: orange;
+  }
+  to {
+    color: #ffd380;
+  }
+}
+
 @media (max-width: 991px) {
   .gallery {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
+  }
+
+  .portfolio-text {
+    padding-top: 120px;
+    padding-left: 160px;
+    font-size: 55;
   }
 }
 
@@ -153,5 +263,11 @@ a {
   -moz-column-width: 100%;
   -webkit-column-width: 100%;
   column-width: 100%;
+  }
+
+  .portfolio-text {
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 15;
   }
 }
