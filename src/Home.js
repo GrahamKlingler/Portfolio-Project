@@ -70,8 +70,8 @@ function Home() {
                 </div>
             </Parallax>
 
-            <div className="bottom-page-home" style={{ margin: "auto", backgroundColor: "white", height: "25vh"}}>
-                <h1 style={{ textAlign: "center", letterSpacing: ".3rem", fontFamily: "Comfortaa-Light", top: "20px"}}>Contact</h1>
+            <div className="bottom-page-home" style={{ marginTop: "auto", paddingTop: "1vh", backgroundColor: "white", height: "15vh"}}>
+                <h1 style={{ textAlign: "center", letterSpacing: ".3rem", fontFamily: "Comfortaa-Light"}}>Contact</h1>
                 <p style={{ textAlign: "center", transform: "translateY(.5vh)" }}>(925) 999-0165 | grahamklingler@gmail.com | gklingle@ucsc.edu</p>
             </div>
 
