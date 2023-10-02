@@ -158,15 +158,11 @@ a {
   font-size: inherit;
   letter-spacing: inherit;
   font-weight: inherit;
+  transition: color .2s ease-in;
 }
 
 .droplink:hover {
-  animation: fade-text-active 0.2s ease-in;
   color: var(--hover-text);
-}
-
-.droplink:hover > .dropdown-menu {
-  opacity: 1;
 }
 
 .dropdown-menu {
@@ -183,7 +179,7 @@ a {
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.dropdown > .droplink:hover + .dropdown-menu{
+.dropdown.active > .droplink + .dropdown-menu{
   transform: translateY(10px);
   pointer-events: auto;
   opacity: 1;
