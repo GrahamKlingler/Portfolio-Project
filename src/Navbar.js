@@ -8,10 +8,27 @@ function Navbar() {
             </home>
             <ul className="portfolio-links">
                 <li>
-                    <Link to="/Portfolio-Project/cars" styles="margin-right: 2%">Cars</Link>
+                    <Link to="/Portfolio-Project/bio" style={{ paddingRight: "40px" }}>About</Link>
                 </li>
-                <li>
-                    <Link to="/Portfolio-Project/street">Street</Link>
+                <li className="dropdown" style={{ paddingLeft: "10px" }}>
+                    <button className="droplink" >Collections</button>
+                    <div className="dropdown-menu">
+                        <li>
+                            <Link style={{ color: "black" }} to="/Portfolio-Project/bridges">Bridges</Link>
+                        </li>
+                        <li>
+                            <Link style={{ color: "black" }} to="/Portfolio-Project/cars">Cars</Link>
+                        </li>
+                        <li>
+                            <Link style={{ color: "black" }} to="/Portfolio-Project/skylines">Skylines</Link>
+                        </li>
+                        <li>
+                            <Link style={{ color: "black" }} to="/Portfolio-Project/buildings">Buildings</Link>
+                        </li>
+                        <li>
+                            <Link style={{ color: "black" }} to="/Portfolio-Project/street">Street</Link>
+                        </li>
+                    </div>
                 </li>
             </ul>
         </div>
