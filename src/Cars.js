@@ -3,10 +3,10 @@ import Navbar from "./Navbar.js";
 
 function Cars() {
     const pathname = window.location.pathname;
-    var folder = require.context(`./img/cars/`, false);
+    var folder = require.context(`./img/cars/small/`, false);
     var images = folder.keys().map(img => folder(img));
     return (
-    <div className="cars">
+    <div className="gallery-pg">
         <Navbar />
         <h1 className="gallery-name">Car Photos</h1>
         <Gallery pathname={pathname} images={images}/>
