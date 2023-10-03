@@ -59,31 +59,33 @@
   -webkit-text-stroke-color: black;
 }
 
-.portfolio-text {
-  flex-direction: column;
+.home-section {
+  display: flex;
+  align-items: left;
   position: absolute;
-  padding-top: 15vh;
-  padding-left: 15vw;
-  display: flex; 
-  /* text-align: center;  */
-  list-style: none;
+}
+
+.portfolio-text {
+  box-sizing: border-box;
+  line-height: 35px;
+  position: relative;
+  margin-top: 230px;
+  margin-left: 200px;
   letter-spacing: .1rem;
 }
 
 .portfolio-title {
   font-family: "Comfortaa-Light";
-  padding-bottom: 0vh;
   font-size: 80px;
   color: white;
+  margin-bottom: 0px;
 }
 
 .portfolio-link {
-  /* padding-top: 0vh; */
-  padding-left: 10px;
-  transform: translateY(-100px);
   text-decoration: underline;
   font-family: "Chivo"; 
   color: orange;
+  margin-left: 7px;
 }
 .about-name {
   padding-left: 0px;
@@ -101,7 +103,6 @@
   padding: 5px 15px;
   margin-top: 12%; 
   overflow: hidden;
-  /* background-color: rgba(40, 205, 255, 0.293); */
   justify-content: center;
   display: flex;
   list-style: none;
@@ -120,7 +121,7 @@
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  align-items: top;
+  /* align-items: top; */
   gap: 2rem;
   letter-spacing: .1rem;
   padding: 3% 5%; 
@@ -135,8 +136,6 @@
 a {
   text-decoration: none;
   color: var(--main-text);
-  /* -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: black; */
 }
 
 .navbar a:hover {
@@ -158,11 +157,20 @@ a {
   font-size: inherit;
   letter-spacing: inherit;
   font-weight: inherit;
-  transition: color .2s ease-in;
 }
 
 .droplink:hover {
-  color: var(--hover-text);
+  /* animation: droplink-hover .2s ease-in; */
+  color: orange;
+}
+
+@keyframes droplink-hover {
+  from {
+    color: black;
+  }
+  to {
+    color: orange;
+  }
 }
 
 .dropdown-menu {
@@ -183,6 +191,10 @@ a {
   transform: translateY(10px);
   pointer-events: auto;
   opacity: 1;
+} 
+
+.dropdown.active > .droplink {
+  color: var(--hover-text);
 } 
 
 

@@ -10,53 +10,40 @@ import street from "./img/street-background.jpg";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Section(props) {
+    return (
+        <Parallax className="home-section" strength={props.strength} bgImage={props.img} style={{ height: props.height}}>
+                <div className="portfolio-text">
+                    <p className="portfolio-title">{props.title}</p>
+                    <Link className="portfolio-link" to={"/Portfolio-Project/" + props.section}>view</Link>
+                </div>
+        </Parallax>
+    )
+}
 
+function Home() {
+    var parallaxStrength = 300;
+    var parallaxHeight = "70vh";
 
     return (
         <div className="home">
-            <Parallax strength={600} bgImage={main} style={{ height: '110vh' }}>
+            <Parallax strength={parallaxStrength} bgImage={main} style={{ height: '110vh', position: "static", justifyContent: "center" }}>
                 <Parallax strength={1500}>
                     <Navbar />
                 </Parallax>    
             </Parallax>
-            
-            <Parallax strength={600} bgImage={bridge} style={{ height: '70vh'}}>
-                <div className="portfolio-text">
-                    <p className="portfolio-title">Bridges</p>
-                    <Link className="portfolio-link" to="/Portfolio-Project/bridges">view</Link>
-                </div>
-            </Parallax>
 
-            <Parallax strength={600} bgImage={car} style={{ height: '70vh'}}>
-                <div className="portfolio-text">
-                    <p className="portfolio-title">Cars</p>
-                    <Link className="portfolio-link" to="/Portfolio-Project/cars">view</Link>
-                </div>
-            </Parallax>
+            <Section strength={parallaxStrength} img={bridge} title="Bridges" section="bridges" height={parallaxHeight}/>
 
-            <Parallax strength={600} bgImage={skyline} style={{ height: '70vh'}}>
-                <div className="portfolio-text">
-                        <p className="portfolio-title">Skylines</p>
-                        <Link className="portfolio-link" to="/Portfolio-Project/skylines">view</Link>
-                </div>             
-            </Parallax>
+            <Section strength={parallaxStrength} img={car} title="Cars" sections="cars" height={parallaxHeight}/>
 
-            <Parallax strength={600} bgImage={building} style={{ height: '70vh'}}>
-                <div className="portfolio-text">
-                        <p className="portfolio-title">Buildings</p>
-                        <Link className="portfolio-link" to="/Portfolio-Project/buildings">view</Link>
-                </div>             
-            </Parallax>
+            <Section strength={parallaxStrength} img={skyline} title="Skylines" sections="skylines" height={parallaxHeight}/>
 
-            <Parallax strength={600} bgImage={street} style={{ height: '70vh'}}>
-                <div className="portfolio-text">
-                        <p className="portfolio-title">Street</p>
-                        <Link className="portfolio-link" to="/Portfolio-Project/street">view</Link>
-                </div>             
-            </Parallax>
+            <Section strength={parallaxStrength} img={building} title="Buildings" sections="buildings" height={parallaxHeight}/>
 
-            <Parallax strength={600} bgImage={ggbridge} style={{ height: '100vh'}}>
+            <Section strength={parallaxStrength} img={street} title="Street" sections="street" height={parallaxHeight}/>
+
+            <Parallax strength={parallaxStrength} bgImage={ggbridge} style={{ height: '100vh'}}>
                 <div className="about">
                 <li>
                         <img style={{marginLeft: "15vw", marginTop: "100px",width: 200, height: 200, objectFit: "cover", borderRadius: 100}} src={profile_pic} alt="Profile"></img>
