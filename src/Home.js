@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 function Section(props) {
     return (
-        <Parallax className="home-section" strength={props.strength} bgImage={props.img} style={{ height: props.height }}>
+        <Parallax className="home-section" strength={props.strength} bgImage={props.img}>
                 <div className="portfolio-text">
                     <p className="portfolio-title">{props.title}</p>
                     <Link className="portfolio-link" to={"/Portfolio-Project/" + props.section}>view</Link>
@@ -23,7 +23,6 @@ function Section(props) {
 
 function Home() {
     var parallaxStrength = 300;
-    var parallaxHeight = "70vh";
 
     return (
         <div className="home">
@@ -33,15 +32,15 @@ function Home() {
                 </Parallax>    
             </Parallax>
 
-            <Section strength={parallaxStrength} img={bridge} title="Bridges" section="bridges" height={parallaxHeight}/>
+            <Section strength={parallaxStrength} img={bridge} title="Bridges" section="bridges"/>
 
-            <Section strength={parallaxStrength} img={car} title="Cars" sections="cars" height={parallaxHeight}/>
+            <Section strength={parallaxStrength} img={car} title="Cars" sections="cars"/>
 
-            <Section strength={parallaxStrength} img={skyline} title="Skylines" sections="skylines" height={parallaxHeight}/>
+            <Section strength={parallaxStrength} img={skyline} title="Skylines" sections="skylines"/>
 
-            <Section strength={parallaxStrength} img={building} title="Buildings" sections="buildings" height={parallaxHeight}/>
+            <Section strength={parallaxStrength} img={building} title="Buildings" sections="buildings"/>
 
-            <Section strength={parallaxStrength} img={street} title="Street" sections="street" height={parallaxHeight}/>
+            <Section strength={parallaxStrength} img={street} title="Street" sections="street"/>
 
             <Parallax strength={parallaxStrength} bgImage={ggbridge} style={{ height: '100vh'}}>
                 <div className="about">

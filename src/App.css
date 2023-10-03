@@ -16,6 +16,8 @@
   animation: fade-load 1s ease-in .5s backwards;
 }
 
+/* About Page */
+
 .bio {
   background-image: url("./img/bio-background.jpg");
   background-size: cover;
@@ -24,6 +26,8 @@
   background-position: center;
   position: fixed;
 }
+
+/* Gallery */
 
 .gallery-pg {
   background-color: #424242;
@@ -59,10 +63,13 @@
   -webkit-text-stroke-color: black;
 }
 
+/* Home Page */
+
 .home-section {
   display: flex;
   align-items: left;
   position: absolute;
+  height: 70vh;
 }
 
 .portfolio-text {
@@ -114,6 +121,8 @@
   text-align: center;
 }
 
+/* Navbar Styles */
+
 .navbar {
   box-sizing: border-box;
   font-family: "Roboto Slab";
@@ -138,7 +147,8 @@ a {
   color: var(--main-text);
 }
 
-.navbar a:hover {
+.navhome > a:hover, 
+.portfolio-links > li > a:hover {
   animation: fade-text-active .2s ease-in;
   color: var(--hover-text);
 }
@@ -159,20 +169,6 @@ a {
   font-weight: inherit;
 }
 
-.droplink:hover {
-  /* animation: droplink-hover .2s ease-in; */
-  color: orange;
-}
-
-@keyframes droplink-hover {
-  from {
-    color: black;
-  }
-  to {
-    color: orange;
-  }
-}
-
 .dropdown-menu {
   position: relative;
   padding: .4rem; 
@@ -187,6 +183,15 @@ a {
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
+.dropdown-menu > li > * {
+  color: black;
+  transition: color 0.1s ease-in;
+}
+
+.dropdown-menu > li:hover > *{
+  color: lightblue;
+} 
+
 .dropdown.active > .droplink + .dropdown-menu{
   transform: translateY(10px);
   pointer-events: auto;
@@ -194,10 +199,12 @@ a {
 } 
 
 .dropdown.active > .droplink {
+  animation: fade-text-active 0.2s ease-in;
   color: var(--hover-text);
 } 
 
 
+/* Animations */
 
 @keyframes fade-load {
   /* 0% {
@@ -240,6 +247,22 @@ a {
   }
 }
 
+/* Responsiveness */
+
+/* @media (orientation: portrait) {
+  .navbar {
+    gap: .05rem;
+  }
+
+  .navbar ul {
+    gap: 0.5rem
+  }
+
+  .home-section {
+    height: 1000vh;
+  }
+} */
+
 @media (max-width: 991px) {
   .gallery {
     -moz-column-count: 2;
@@ -252,6 +275,7 @@ a {
     padding-left: 160px;
     font-size: 55;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -269,4 +293,5 @@ a {
     padding-left: 30px;
     font-size: 15;
   }
+
 }
