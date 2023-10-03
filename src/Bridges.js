@@ -8,7 +8,7 @@ function Bridges() {
     return (
     <div className="gallery-pg">
         <Navbar />
-        <h1 className="gallery-name">Bridges</h1>
+        <h1 className="gallery-name">bridges</h1>
         <Gallery pathname={pathname} images={images}/>
     </div>
     );

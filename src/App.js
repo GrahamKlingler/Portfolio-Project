@@ -15,10 +15,10 @@ function App() {
       <div className='App'>
         <Routes>
           <Route path={`/${reponame}/`} element={<Home />}/>
-          <Route path={`/${reponame}/cars`} element={<Cars />}/>
-          <Route path={`/${reponame}/street`} element={<Street />}/>
+          <Route path={`/${reponame}/automobiles`} element={<Cars />}/>
+          <Route path={`/${reponame}/urban`} element={<Street />}/>
           <Route path={`/${reponame}/bridges`} element={<Bridges />}/>
-          <Route path={`/${reponame}/buildings`} element={<Buildings />}/>
+          <Route path={`/${reponame}/architecture`} element={<Buildings />}/>
           <Route path={`/${reponame}/skylines`} element={<Skylines />}/>
           <Route path={`/${reponame}/bio`} element={<Bio />}/>
         </Routes>

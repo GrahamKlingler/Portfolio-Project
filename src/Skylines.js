@@ -8,7 +8,7 @@ function Skylines() {
     return (
     <div className="gallery-pg">
         <Navbar />
-        <h1 className="gallery-name">Skylines</h1>
+        <h1 className="gallery-name">skylines</h1>
         <Gallery pathname={pathname} images={images}/>
     </div>
     );

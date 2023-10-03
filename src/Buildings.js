@@ -8,7 +8,7 @@ function Buildings() {
     return (
     <div className="gallery-pg">
         <Navbar />
-        <h1 className="gallery-name">Buildings</h1>
+        <h1 className="gallery-name">architecture</h1>
         <Gallery pathname={pathname} images={images}/>
     </div>
     );

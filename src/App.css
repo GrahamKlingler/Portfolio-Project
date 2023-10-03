@@ -11,6 +11,16 @@
   src: local('Comfortaa-Light'), url(./Comfortaa-Light.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Gotham-Light';
+  src: local('Gotham-Light'), url(./Gotham\ Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Rockwell-Regular';
+  src: local('Rockwell Regular'), url(./Rockwell\ Regular.otf), format('opentype');
+}
+
 /* Background and loading animation */
 .App {
   animation: fade-load 1s ease-in .5s backwards;
@@ -41,6 +51,7 @@
   -webkit-column-width: 33%;
   column-width: 33%;
   padding: 0 20px;
+  line-height: 30px;
 }
 
 .gallery .pics {
@@ -54,10 +65,11 @@
 }
 
 .gallery-name {
+  padding-left: 35px;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Gotham-Light";
   font-size: 50px;
-  letter-spacing: .3rem;
+  letter-spacing: 1.3rem;
   color: var(--main-text);
   stroke-width: 3px;
   -webkit-text-stroke-color: black;
@@ -68,7 +80,7 @@
 .home-section {
   display: flex;
   align-items: left;
-  position: absolute;
+  position: relative;
   height: 70vh;
 }
 
@@ -125,15 +137,18 @@
 
 .navbar {
   box-sizing: border-box;
-  font-family: "Roboto Slab";
-  font-size: x-large;
-  font-weight: bold;
+  font-family: "Rockwell-Regular";
+  font-size: 20px;
+  /* font-weight: bold; */
   display: flex;
   justify-content: space-between;
   /* align-items: top; */
   gap: 2rem;
-  letter-spacing: .1rem;
-  padding: 3% 5%; 
+  letter-spacing: .2rem;
+  padding-top: 3%; 
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1.5%
 }
 
 .navbar ul {
