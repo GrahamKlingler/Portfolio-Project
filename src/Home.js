@@ -34,13 +34,13 @@ function Home() {
 
             <Section strength={parallaxStrength} img={bridge} title="Bridges" section="bridges"/>
 
-            <Section strength={parallaxStrength} img={car} title="Cars" sections="cars"/>
+            <Section strength={parallaxStrength} img={car} title="Cars" section="cars"/>
 
-            <Section strength={parallaxStrength} img={skyline} title="Skylines" sections="skylines"/>
+            <Section strength={parallaxStrength} img={skyline} title="Skylines" section="skylines"/>
 
-            <Section strength={parallaxStrength} img={building} title="Buildings" sections="buildings"/>
+            <Section strength={parallaxStrength} img={building} title="Buildings" section="buildings"/>
 
-            <Section strength={parallaxStrength} img={street} title="Street" sections="street"/>
+            <Section strength={parallaxStrength} img={street} title="Street" section="street"/>
 
             <Parallax strength={parallaxStrength} bgImage={ggbridge} style={{ height: '100vh'}}>
                 <div className="about">
