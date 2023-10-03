@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio-Project/static/css/main.91527f12.css",
-    "main.js": "/Portfolio-Project/static/js/main.0cefaa23.js",
+    "main.css": "/Portfolio-Project/static/css/main.cc9322b3.css",
+    "main.js": "/Portfolio-Project/static/js/main.a1edb556.js",
     "static/js/787.32f5e8f0.chunk.js": "/Portfolio-Project/static/js/787.32f5e8f0.chunk.js",
-    "static/media/bio-background.jpg": "/Portfolio-Project/static/media/bio-background.1b4ea19af4184b7dcf09.jpg",
     "static/media/GKK_9201-min.jpg": "/Portfolio-Project/static/media/GKK_9201-min.7d6ef3abc61c4522f98c.jpg",
     "static/media/GKK_9244-min.jpg": "/Portfolio-Project/static/media/GKK_9244-min.4d4412135b18de604f85.jpg",
     "static/media/GKK_9253-min.jpg": "/Portfolio-Project/static/media/GKK_9253-min.a3fc896b52246156085f.jpg",
@@ -12,6 +11,7 @@
     "static/media/GKK_9284-min.jpg": "/Portfolio-Project/static/media/GKK_9284-min.ef6c774e332d9ba5727f.jpg",
     "static/media/GKK_9271-min.jpg": "/Portfolio-Project/static/media/GKK_9271-min.335b181f74298a4fad11.jpg",
     "static/media/GKK_9148-min.jpg": "/Portfolio-Project/static/media/GKK_9148-min.40b9163c6cf401d3d141.jpg",
+    "static/media/bio-background.jpg": "/Portfolio-Project/static/media/bio-background.85d9e6eaa328cc16021f.jpg",
     "static/media/GKK_9623-min.jpg": "/Portfolio-Project/static/media/GKK_9623-min.140d14a422f6d48aa776.jpg",
     "static/media/GKK_7719-2-min.jpg": "/Portfolio-Project/static/media/GKK_7719-2-min.c5c3b03335143e3b6cb9.jpg",
     "static/media/graham-klingler-xewx7zRa23A-unsplash-min.jpg": "/Portfolio-Project/static/media/graham-klingler-xewx7zRa23A-unsplash-min.c5bbad10f34a98061006.jpg",
@@ -82,13 +82,15 @@
     "static/media/car-background.jpg": "/Portfolio-Project/static/media/car-background.9afe20b0d856ee442471.jpg",
     "static/media/profile-picture.jpg": "/Portfolio-Project/static/media/profile-picture.7baf04d9f9ef115b5f5a.jpg",
     "static/media/Comfortaa-Light.ttf": "/Portfolio-Project/static/media/Comfortaa-Light.6af5a44adea4e84298b6.ttf",
+    "static/media/Gotham Light.otf": "/Portfolio-Project/static/media/Gotham Light.9cea7310cefbca073718.otf",
+    "static/media/Rockwell Regular.otf": "/Portfolio-Project/static/media/Rockwell Regular.54f188dfe765d917d253.otf",
     "index.html": "/Portfolio-Project/index.html",
-    "main.91527f12.css.map": "/Portfolio-Project/static/css/main.91527f12.css.map",
-    "main.0cefaa23.js.map": "/Portfolio-Project/static/js/main.0cefaa23.js.map",
+    "main.cc9322b3.css.map": "/Portfolio-Project/static/css/main.cc9322b3.css.map",
+    "main.a1edb556.js.map": "/Portfolio-Project/static/js/main.a1edb556.js.map",
     "787.32f5e8f0.chunk.js.map": "/Portfolio-Project/static/js/787.32f5e8f0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91527f12.css",
-    "static/js/main.0cefaa23.js"
+    "static/css/main.cc9322b3.css",
+    "static/js/main.a1edb556.js"
   ]
 }
