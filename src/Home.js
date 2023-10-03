@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 function Section(props) {
     return (
-        <Parallax className="home-section" strength={props.strength} bgImage={props.img} style={{ height: props.height}}>
+        <Parallax className="home-section" strength={props.strength} bgImage={props.img} style={{ height: props.height }}>
                 <div className="portfolio-text">
                     <p className="portfolio-title">{props.title}</p>
                     <Link className="portfolio-link" to={"/Portfolio-Project/" + props.section}>view</Link>
@@ -50,16 +50,16 @@ function Home() {
                     </li>
                     <li>
                     <div className="about-main">
-                        <p style={{ transform: "translateY(40px)" }} className="portfolio-title">About</p>
-                        <Link style={{ padding: "none", margin: "none" }}className="portfolio-link" to="/Portfolio-Project/bio">view</Link>
+                        <p style={{ pointerEvents: "none", transform: "translateY(30px)", paddingBottom: "5px" }} className="portfolio-title">About</p>
+                        <Link style={{ marginLeft: "-130px" }}className="portfolio-link" to="/Portfolio-Project/bio">view</Link>
                 </div>    
                     </li>
                 </div>
             </Parallax>
 
-            <div className="bottom-page-home" style={{ marginTop: "auto", paddingTop: "1vh", backgroundColor: "white", height: "15vh"}}>
+            <div className="bottom-page-home">
                 <h1 style={{ textAlign: "center", letterSpacing: ".3rem", fontFamily: "Comfortaa-Light"}}>Contact</h1>
-                <p style={{ textAlign: "center", transform: "translateY(.5vh)" }}>(925) 999-0165 | grahamklingler@gmail.com | gklingle@ucsc.edu</p>
+                <p style={{ textAlign: "center", transform: "translateY(.5vh)", paddingBottom: "15px" }}>(925) 999-0165 | grahamklingler@gmail.com | gklingle@ucsc.edu</p>
             </div>
 
 
