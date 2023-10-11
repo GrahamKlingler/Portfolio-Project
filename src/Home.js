@@ -26,7 +26,7 @@ function Home() {
 
     return (
         <div className="home">
-            <Parallax strength={parallaxStrength} bgImage={main} style={{ height: '110vh', position: "static", justifyContent: "center" }}>
+            <Parallax className="homeStart" strength={parallaxStrength} bgImage={main}>
                 <Parallax strength={1500}>
                     <Navbar />
                 </Parallax>    
@@ -57,7 +57,7 @@ function Home() {
             </Parallax>
 
             <div className="bottom-page-home">
-                <h1 style={{ textAlign: "center", letterSpacing: ".3rem", fontFamily: "Comfortaa-Light"}}>Contact</h1>
+                <h1 style={{ textAlign: "center", letterSpacing: ".3rem", fontFamily: "Gotham-Light"}}>Contact</h1>
                 <p style={{ textAlign: "center", transform: "translateY(.5vh)", paddingBottom: "15px" }}>(925) 999-0165 | grahamklingler@gmail.com | gklingle@ucsc.edu</p>
             </div>
 

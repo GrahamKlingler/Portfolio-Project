@@ -130,6 +130,12 @@
   height: 70vh;
 }
 
+.homeStart {
+  height: 110vh;
+  position: static; 
+  justify-content: center;
+}
+
 .portfolio-text {
   box-sizing: border-box;
   line-height: 35px;
@@ -140,7 +146,7 @@
 }
 
 .portfolio-title {
-  font-family: "Comfortaa-Light";
+  font-family: "Gotham-Light";
   font-size: 80px;
   color: white;
   margin-bottom: 0px;
@@ -337,6 +343,10 @@ a {
     font-size: 55;
   }
 
+  .home-section {
+    height: 130vh;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -353,6 +363,10 @@ a {
     padding-top: 15px;
     padding-left: 30px;
     font-size: 15;
+  }
+
+  .home-section {
+    height: 170vh;
   }
 
 }
