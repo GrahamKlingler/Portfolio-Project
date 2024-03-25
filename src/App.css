@@ -7,23 +7,24 @@
 @import url(https://fonts.googleapis.com/css?family=Chivo);
 
 @font-face {
-  font-family: 'Comfortaa-Light';
-  src: local('Comfortaa-Light'), url(./Comfortaa-Light.ttf) format('truetype');
+  font-family: "Comfortaa-Light";
+  src: local("Comfortaa-Light"), url(./Comfortaa-Light.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Gotham-Light';
-  src: local('Gotham-Light'), url(./Gotham\ Light.otf) format('opentype');
+  font-family: "Gotham-Light";
+  src: local("Gotham-Light"), url(./Gotham\ Light.otf) format("opentype");
 }
 
 @font-face {
-  font-family: 'Rockwell-Regular';
-  src: local('Rockwell Regular'), url(./Rockwell\ Regular.otf), format('opentype');
+  font-family: "Rockwell-Regular";
+  src: local("Rockwell Regular"), url(./Rockwell\ Regular.otf),
+    format("opentype");
 }
 
 /* Background and loading animation */
 .App {
-  animation: fade-load 1s ease-in .5s backwards;
+  animation: fade-load 1s ease-in 0.5s backwards;
 }
 
 /* About Page */
@@ -83,8 +84,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  transition: opacity 1.4s ease, visibility 0.4s ease, transform 0.5s ease-in-out;
+  background-color: #faf9f6;
+  transition: opacity 1.4s ease, visibility 0.4s ease,
+    transform 0.5s ease-in-out;
   visibility: hidden;
   opacity: 0;
   transform: scale(0);
@@ -98,7 +100,7 @@
   transform: scale(1);
 }
 
-.model img{
+.model img {
   width: auto;
   max-width: 100%;
   height: auto;
@@ -132,17 +134,17 @@
 
 .homeStart {
   height: 110vh;
-  position: static; 
+  position: static;
   justify-content: center;
 }
 
 .portfolio-text {
   box-sizing: border-box;
-  line-height: 35px;
+  line-height: 50px;
   position: relative;
   margin-top: 230px;
   margin-left: 200px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .portfolio-title {
@@ -154,7 +156,8 @@
 
 .portfolio-link {
   text-decoration: underline;
-  font-family: "Chivo"; 
+  font-family: "Chivo";
+  font-size: 30px;
   color: orange;
   margin-left: 7px;
 }
@@ -163,7 +166,7 @@
 }
 
 .portfolio-link:hover {
-  animation: fade-view-portfolio .2s ease-in;
+  animation: fade-view-portfolio 0.2s ease-in;
   color: #ffd380;
 }
 
@@ -172,7 +175,7 @@
   position: absolute;
   top: 50%;
   padding: 5px 15px;
-  margin-top: 12%; 
+  margin-top: 12%;
   overflow: hidden;
   justify-content: center;
   display: flex;
@@ -183,6 +186,43 @@
   font-size: xx-large;
   color: black;
   text-align: center;
+}
+
+.about-p {
+  height: 100vh;
+}
+
+.about-main p {
+  pointer-events: none;
+  transform: translateY(30px);
+  padding-bottom: 5px;
+}
+
+.about-main Link {
+  margin-left: -130px;
+}
+
+.abt-pfp {
+  margin-left: 15vw;
+  margin-top: 100px;
+  width: 10vw;
+  height: 10vw;
+  object-fit: cover;
+  border-radius: 5vw;
+}
+
+.bottom-page-home {
+  text-align: center;
+}
+
+.bottom-page-home h1 {
+  letter-spacing: 0.3rem;
+  font-family: "Gotham-Light";
+}
+
+.bottom-page-home p {
+  transform: translateY(0.5vh);
+  padding-bottom: 15px;
 }
 
 /* Navbar Styles */
@@ -196,11 +236,11 @@
   justify-content: space-between;
   /* align-items: top; */
   gap: 2rem;
-  letter-spacing: .2rem;
-  padding-top: 3%; 
+  letter-spacing: 0.2rem;
+  padding-top: 3%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 1.5%
+  padding-bottom: 1.5%;
 }
 
 .navbar ul {
@@ -214,9 +254,9 @@ a {
   color: var(--main-text);
 }
 
-.navhome > a:hover, 
+.navhome > a:hover,
 .portfolio-links > li > a:hover {
-  animation: fade-text-active .2s ease-in;
+  animation: fade-text-active 0.2s ease-in;
   color: var(--hover-text);
 }
 
@@ -238,7 +278,7 @@ a {
 
 .dropdown-menu {
   position: relative;
-  padding: .4rem; 
+  padding: 0.4rem;
   border-radius: 2px;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -255,21 +295,20 @@ a {
   transition: color 0.1s ease-in;
 }
 
-.dropdown-menu > li:hover > *{
+.dropdown-menu > li:hover > * {
   color: lightblue;
-} 
+}
 
-.dropdown.active > .droplink + .dropdown-menu{
+.dropdown.active > .droplink + .dropdown-menu {
   transform: translateY(10px);
   pointer-events: auto;
   opacity: 1;
-} 
+}
 
 .dropdown.active > .droplink {
   animation: fade-text-active 0.2s ease-in;
   color: var(--hover-text);
-} 
-
+}
 
 /* Animations */
 
@@ -303,7 +342,7 @@ a {
   to {
     color: var(--hover-text);
   }
-} 
+}
 
 @keyframes fade-view-portfolio {
   from {
@@ -330,43 +369,80 @@ a {
   }
 } */
 
+@media (max-width: 1024px) {
+  .homeStart {
+    height: 60vh;
+  }
+
+  .home-section {
+    justify-content: left;
+  }
+
+  .portfolio-text {
+    line-height: 50px;
+    margin-top: 230px;
+    margin-left: 25px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .portfolio-title {
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
+
+  .portfolio-link {
+    font-size: 20px;
+    margin-left: 7px;
+  }
+
+  .about {
+  }
+
+  .about-p {
+    height: 45vh;
+  }
+}
+
 @media (max-width: 991px) {
   .gallery {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
   }
-
-  .portfolio-text {
-    padding-top: 120px;
-    padding-left: 160px;
-    font-size: 55;
-  }
-
-  .home-section {
-    height: 130vh;
-  }
-
 }
 
 @media (max-width: 480px) {
   .gallery {
     -moz-column-count: 1;
-  -webkit-column-count: 1;
-  column-count: 1;
-  -moz-column-width: 100%;
-  -webkit-column-width: 100%;
-  column-width: 100%;
-  }
-
-  .portfolio-text {
-    padding-top: 15px;
-    padding-left: 30px;
-    font-size: 15;
+    -webkit-column-count: 1;
+    column-count: 1;
+    -moz-column-width: 100%;
+    -webkit-column-width: 100%;
+    column-width: 100%;
   }
 
   .home-section {
-    height: 90vh;
+    height: 50vh;
   }
 
+  .portfolio-text {
+    line-height: 50px;
+    margin-top: 230px;
+    margin-left: 10px;
+  }
+
+  .portfolio-title {
+    font-size: 80px;
+    margin-bottom: 0px;
+  }
+
+  .portfolio-link {
+    font-size: 30px;
+    margin-left: 7px;
+  }
+
+  .about-p {
+    height: 1vh;
+  }
 }

@@ -42,23 +42,23 @@ function Home() {
 
             <Section strength={parallaxStrength} img={street} title="Urban" section="urban"/>
 
-            <Parallax strength={parallaxStrength} bgImage={ggbridge} style={{ height: '100vh'}}>
-                <div className="about">
+            <Parallax className="about-p" strength={parallaxStrength} bgImage={ggbridge}>
+            <div className="about">
                 <li>
-                        <img style={{marginLeft: "15vw", marginTop: "100px",width: 200, height: 200, objectFit: "cover", borderRadius: 100}} src={profile_pic} alt="Profile"></img>
+                        <img className="abt-pfp" src={profile_pic} alt="Profile"></img>
                     </li>
                     <li>
                     <div className="about-main">
-                        <p style={{ pointerEvents: "none", transform: "translateY(30px)", paddingBottom: "5px" }} className="portfolio-title">About</p>
-                        <Link style={{ marginLeft: "-130px" }}className="portfolio-link" to="/Portfolio-Project/bio">view</Link>
+                        <p className="portfolio-title">About</p>
+                        <Link className="portfolio-link" to="/Portfolio-Project/bio">view</Link>
                 </div>    
                     </li>
-                </div>
+            </div>
             </Parallax>
 
             <div className="bottom-page-home">
-                <h1 style={{ textAlign: "center", letterSpacing: ".3rem", fontFamily: "Gotham-Light"}}>Contact</h1>
-                <p style={{ textAlign: "center", transform: "translateY(.5vh)", paddingBottom: "15px" }}>(925) 999-0165 | grahamklingler@gmail.com | gklingle@ucsc.edu</p>
+                <h1>Contact</h1>
+                <p>(925) 999-0165 | grahamklingler@gmail.com | gklingle@ucsc.edu</p>
             </div>
 
 

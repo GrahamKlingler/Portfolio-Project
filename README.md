@@ -1,3 +1,7 @@
+# Personal Portfolio Project
+
+This page is for storing and organizing some of my favorite pictures and to get better using React. The format for the page was inspired by one of my favorite photographers, Peter McKinnon.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
