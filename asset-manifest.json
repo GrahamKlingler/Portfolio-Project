@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio-Project/static/css/main.8eddad64.css",
+    "main.css": "/Portfolio-Project/static/css/main.a33745c4.css",
     "main.js": "/Portfolio-Project/static/js/main.aac1501b.js",
     "static/js/787.fe1fed19.chunk.js": "/Portfolio-Project/static/js/787.fe1fed19.chunk.js",
     "static/media/GKK_9201-min.jpg": "/Portfolio-Project/static/media/GKK_9201-min.7d6ef3abc61c4522f98c.jpg",
@@ -85,12 +85,12 @@
     "static/media/Gotham Light.otf": "/Portfolio-Project/static/media/Gotham Light.9cea7310cefbca073718.otf",
     "static/media/Rockwell Regular.otf": "/Portfolio-Project/static/media/Rockwell Regular.54f188dfe765d917d253.otf",
     "index.html": "/Portfolio-Project/index.html",
-    "main.8eddad64.css.map": "/Portfolio-Project/static/css/main.8eddad64.css.map",
+    "main.a33745c4.css.map": "/Portfolio-Project/static/css/main.a33745c4.css.map",
     "main.aac1501b.js.map": "/Portfolio-Project/static/js/main.aac1501b.js.map",
     "787.fe1fed19.chunk.js.map": "/Portfolio-Project/static/js/787.fe1fed19.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8eddad64.css",
+    "static/css/main.a33745c4.css",
     "static/js/main.aac1501b.js"
   ]
 }
