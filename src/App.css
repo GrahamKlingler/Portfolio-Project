@@ -370,7 +370,7 @@ a {
   }
 } */
 
-@media (max-width: 1500px) {
+@media (max-width: 1680px) {
   .homeStart {
     height: 50rem;
   }
